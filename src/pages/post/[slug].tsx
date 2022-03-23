@@ -4,6 +4,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 
 import Layout from '../../components/layout/Layout';
+import Styles from '../../styles/PostPage.module.css';
 import { IPost } from '../../types/post';
 import { getAllPosts, getPost } from '../../utils/mdxUtils';
 
@@ -21,14 +22,16 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
         <meta property="og:image" content="" key="ogImage" />
       </Head>
 
-      <article className="prose prose-green">
-        <header>
-          <h1>{frontMatter.title}</h1>
-          <p>{frontMatter.description}</p>
-        </header>
+      <div className={Styles.container}>
+        <article className="">
+          <header>
+            <h1>{frontMatter.title}</h1>
+            <p>{frontMatter.description}</p>
+          </header>
 
-        <MDXRemote {...source} />
-      </article>
+          <MDXRemote {...source} />
+        </article>
+      </div>
     </Layout>
   );
 };

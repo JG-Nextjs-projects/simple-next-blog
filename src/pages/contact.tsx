@@ -1,7 +1,19 @@
+import type { ReactElement } from 'react';
 import React from 'react';
 
-const contact = () => {
-  return <div>contact</div>;
+import Layout from '../components/layout/Layout';
+import Styles from '../styles/Contact.module.css';
+
+const Contact = () => {
+  return (
+    <div className={Styles.container}>
+      <h1>Contact Page</h1>
+    </div>
+  );
 };
 
-export default contact;
+export default Contact;
+
+Contact.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
+};

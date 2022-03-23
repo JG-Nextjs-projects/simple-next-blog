@@ -1,0 +1,7 @@
+.navPrimary a {
+  margin-right: 1rem;
+}
+
+.navPrimary a:last-child {
+  margin-right: 0;
+}

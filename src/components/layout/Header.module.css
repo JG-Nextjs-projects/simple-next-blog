@@ -1,0 +1,40 @@
+.homeHeader {
+  background-color: rgba(16, 27, 45, 0.45);
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+}
+
+.siteHeader {
+  background-color: #101b2d;
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+}
+
+.homeHeader a,
+.siteHeader a {
+  color: #fbc616;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

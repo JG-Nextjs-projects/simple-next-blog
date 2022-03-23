@@ -8,6 +8,7 @@ const Contact = () => {
   return (
     <div className={Styles.container}>
       <h1>Contact Page</h1>
+      <p>Add contact details here.</p>
     </div>
   );
 };

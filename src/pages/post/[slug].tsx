@@ -17,6 +17,7 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   return (
     <Layout>
       <Head>
+        <title>{frontMatter.title} | Create Next App</title>
         <meta name="description" content={frontMatter.description} key="description" />
         <meta property="og:description" content={frontMatter.description} key="ogDescription" />
         <meta property="og:image" content="" key="ogImage" />
@@ -26,6 +27,7 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
         <article className="">
           <header>
             <h1>{frontMatter.title}</h1>
+            <time>{frontMatter.date}</time>
             <p>{frontMatter.description}</p>
           </header>
 
